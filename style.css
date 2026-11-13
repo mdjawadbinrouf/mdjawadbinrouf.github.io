@@ -624,6 +624,61 @@ a:hover {
   margin-bottom: 10px;
 }
 
+/* About me */
+.about-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  align-items: start;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 32px;
+  margin-bottom: 16px;
+}
+
+.about-photo {
+  width: 220px;
+  height: 260px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mint);
+  color: var(--leaf);
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 52px;
+}
+
+.about-text p {
+  margin: 0 0 14px;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+  margin-top: 20px !important;
+}
+
+@media (max-width: 700px) {
+  .about-card {
+    grid-template-columns: 1fr;
+    padding: 22px;
+    gap: 20px;
+  }
+  .about-photo {
+    width: 160px;
+    height: 190px;
+  }
+}
+
 /* Footer */
 .site-footer {
   margin-top: 72px;
