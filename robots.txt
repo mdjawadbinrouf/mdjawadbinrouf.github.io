@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://mdjawadbinrouf.github.io/sitemap.xml

@@ -1,0 +1,269 @@
+/* Md Jawad Bin Rouf: personal website styles */
+
+:root {
+  --text: #1b2430;
+  --muted: #56616c;
+  --soft: #3a4450;
+  --line: #e6e9ec;
+  --link: #0b5f58;
+  --link-hover: #10243a;
+  --tile: #eef1f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-name {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 22px;
+  font-size: 15px;
+}
+
+.site-nav a {
+  color: #4a5561;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Intro on the home page */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px 32px;
+  padding: 44px 0 32px;
+}
+
+.photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dcebe8;
+  color: var(--link);
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+}
+
+.intro-text {
+  flex: 1 1 360px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.intro-text p {
+  margin: 0;
+  color: #4a5561;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 18px;
+  margin-top: 6px !important;
+  font-size: 15px;
+}
+
+.links a {
+  padding: 6px 0;
+}
+
+/* Sections */
+main {
+  padding-bottom: 24px;
+}
+
+section {
+  padding-bottom: 32px;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 24px 0 4px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.page-title {
+  margin: 40px 0 20px;
+  font-size: 28px;
+}
+
+.more {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 0;
+}
+
+/* Research items with a thumbnail */
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.item:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+.thumb {
+  flex: 0 0 160px;
+  width: 160px;
+  height: 104px;
+  object-fit: cover;
+  object-position: left top;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--tile);
+}
+
+.item-text {
+  flex: 1 1 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.item-title {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.item-title:hover {
+  text-decoration: underline;
+}
+
+.meta {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.summary {
+  font-size: 15px;
+  color: var(--soft);
+}
+
+/* Plain lists (publications, awards, CV) */
+.plain {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.plain li {
+  margin-bottom: 10px;
+}
+
+.entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entries li {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.entries li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.entries .title {
+  font-weight: 600;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  background: var(--link-hover);
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #ffffff;
+  background: var(--link);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 20px 0 36px;
+  font-size: 13px;
+  color: var(--muted);
+}
