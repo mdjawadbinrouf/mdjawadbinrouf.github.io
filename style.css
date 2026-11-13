@@ -556,7 +556,51 @@ a:hover {
 
 /* Inner pages */
 .page-head {
+  position: relative;
   padding: 48px 0 56px;
+  min-height: 210px;
+}
+
+.head-art {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(46%, 440px);
+  height: auto;
+}
+
+.head-art .blades {
+  animation: spin 9s linear infinite;
+}
+
+.head-art .slow .blades {
+  animation-duration: 13s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .page-head {
+    display: flex;
+    flex-direction: column;
+  }
+  .head-art {
+    position: relative;
+    order: 2;
+    width: 100%;
+    max-width: 340px;
+    margin: 20px 0 -56px auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .head-art .blades {
+    animation: none;
+  }
 }
 
 .page-head h1 {
