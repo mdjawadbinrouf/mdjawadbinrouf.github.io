@@ -251,3 +251,15 @@ footer.sticky-bottom {
 .profile figure img {
   box-shadow: none !important;
 }
+
+/* No venue badges: drop the empty badge column and use the full width */
+ol.bibliography li .row > .abbr {
+  display: none;
+}
+ol.bibliography li .row > .col-sm-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.profile .more-info {
+  font-family: inherit;
+}
