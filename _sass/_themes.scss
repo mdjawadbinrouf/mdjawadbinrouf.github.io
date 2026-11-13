@@ -264,3 +264,42 @@ ol.bibliography li .row > .col-sm-8 {
 .profile div.more-info {
   font-family: inherit !important;
 }
+
+/* Selected research and awards on the home page */
+.research-item {
+  padding: 1.25rem 0;
+  border-top: 1px solid #e3e7ea;
+}
+.research-img {
+  border: 1px solid #e3e7ea;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.research-cap,
+.research-venue,
+.award-meta {
+  font-size: 0.85rem;
+  color: #5b6773;
+  margin: 0.35rem 0 0;
+}
+.research-title,
+.award-title {
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.35;
+}
+.research-venue {
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}
+.awards-grid {
+  margin-top: 0.5rem;
+}
+.award-item {
+  margin-bottom: 1.5rem;
+}
+.award-img {
+  border-radius: 6px;
+  margin-bottom: 0.6rem;
+  width: 100%;
+}
