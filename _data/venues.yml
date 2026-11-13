@@ -1,0 +1,15 @@
+# Badge colors and links for the "abbr" field in _bibliography/papers.bib
+"WMB":
+  color: "#0b5f58"
+"Energy Nexus":
+  color: "#0b5f58"
+"DAJ":
+  color: "#0b5f58"
+"SCI":
+  color: "#0b5f58"
+"ICMIEE":
+  color: "#10243a"
+"ICMEAS":
+  color: "#10243a"
+"Review":
+  color: "#6b7785"
