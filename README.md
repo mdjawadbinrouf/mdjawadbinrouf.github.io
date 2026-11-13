@@ -1,14 +1,17 @@
 # mdjawadbinrouf.github.io
 
-Personal website of Md Jawad Bin Rouf. Plain HTML and one CSS file, published by GitHub Pages.
+Personal website of Md Jawad Bin Rouf. Plain HTML, one CSS file and one small script, published by GitHub Pages.
 
 ## Editing
 
-- Home page: `index.html`
-- Research: `research.html`
+- Home page: `index.html` (research, selected papers, awards)
 - Publications: `publications.html`
 - Awards: `awards.html`
 - CV page: `cv.html`, and the PDF at `assets/pdf/Md_Jawad_Bin_Rouf_CV.pdf`
 - Colors and fonts: `style.css`
+- Hero signal animation: `hero.js`
+- Photo: save it as `assets/img/photo.jpg` and follow the comment in `index.html`
 
 Edit a file on GitHub (pencil icon), commit, and the site updates within a minute or two.
+
+Fonts: Bricolage Grotesque and IBM Plex Sans, both under the SIL Open Font License (see `assets/fonts`).
