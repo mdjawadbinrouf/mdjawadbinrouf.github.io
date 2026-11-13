@@ -234,3 +234,10 @@ h6,
 .post-title {
   font-weight: 600;
 }
+
+/* Venue badges: white text on the colored background for contrast */
+.abbr abbr.badge,
+.abbr abbr.badge div,
+.abbr abbr.badge a {
+  color: #ffffff !important;
+}

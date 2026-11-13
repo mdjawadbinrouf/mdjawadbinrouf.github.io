@@ -70,19 +70,19 @@ cv:
         releaseDate: 2026-03
         url: https://doi.org/10.1016/j.dajour.2025.100662
 
-      - title: "Optimization of rice supply chain through multivariate forecasting using ensemble learning models"
-        authors:
-          - F.B. Mahmud, M.J.B. Rouf et al.
-        publisher: Supply Chain Insider, vol. 14
-        releaseDate: 2024-10
-        url: https://supplychaininsider.org/ojs/index.php/home/article/view/116
-
       - title: "Multivariate Jute Forecasting Using Ensemble Learning for Supply Chain Optimization"
         authors:
           - M. Morshed, F.B. Mahmud, M.J.B. Rouf et al.
         publisher: International Conference on Mechanical, Industrial and Energy Engineering, vol. 3
         releaseDate: 2025-01
         url: https://doi.org/10.38032/scse.2025.3.19
+
+      - title: "Optimization of rice supply chain through multivariate forecasting using ensemble learning models"
+        authors:
+          - F.B. Mahmud, M.J.B. Rouf et al.
+        publisher: Supply Chain Insider, vol. 14
+        releaseDate: 2024-10
+        url: https://supplychaininsider.org/ojs/index.php/home/article/view/116
 
     Awards:
       - title: Khan Bahadur Ahsanullah Gold Medal (Chancellor's Gold Medal)
@@ -123,33 +123,11 @@ cv:
         url: https://www.aust.edu/achievements/1642
         summary: For exceptional paper writing and the best research presentation.
 
-    Volunteer:
-      - company: IEOM Society AUST Student Chapter
-        position: Faculty Advisor
-        location: Dhaka, Bangladesh
-        start_date: 2026-09
-        end_date: present
-        summary: Mentoring student executive members in organizing conferences, workshops and competitions.
-
-      - company: Ahsanullah University of Science and Technology
-        position: Member, Thesis Committee
-        location: Dhaka, Bangladesh
-        start_date: 2025-11
-        end_date: present
-        summary: Coordinating undergraduate thesis supervisor selection and organizing pre-defense and defense sessions.
-
-      - company: Ahsanullah University of Science and Technology
-        position: Department Fire Warden
-        location: Dhaka, Bangladesh
-        start_date: 2025-11
-        end_date: present
-        summary: Overseeing departmental fire safety and evacuation procedures, routine safety checks and fire drills.
-
-      - company: Disaster Relief Operations, Feni
-        position: Amateur Radio (Ham) Operator
-        location: Feni, Bangladesh
-        date: 2024-08
-        summary: Provided emergency ham radio communications during the 2024 Feni floods when standard networks failed.
+    Service:
+      - bullet: "**Faculty Advisor**, IEOM Society AUST Student Chapter (2026 to present). Mentoring student executive members in organizing conferences, workshops and competitions."
+      - bullet: "**Member, Thesis Committee**, AUST Department of Industrial and Production Engineering (2025 to present). Coordinating thesis supervisor selection and pre-defense and defense sessions."
+      - bullet: "**Department Fire Warden**, AUST (2025 to present). Overseeing departmental fire safety, evacuation procedures and fire drills."
+      - bullet: "**Amateur Radio (Ham) Operator**, disaster relief operations in Feni (August 2024). Provided emergency radio communications during the Feni floods when standard networks failed."
 
     Skills:
       - name: Programming
