@@ -267,8 +267,23 @@ ol.bibliography li .row > .col-sm-8 {
 
 /* Selected research and awards on the home page */
 .research-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.75rem;
+  align-items: flex-start;
   padding: 1.25rem 0;
   border-top: 1px solid #e3e7ea;
+}
+.research-media {
+  flex: 0 1 360px;
+  min-width: 240px;
+}
+.research-text {
+  flex: 1 1 320px;
+}
+.research-img {
+  width: 100%;
+  height: auto;
 }
 .research-img {
   border: 1px solid #e3e7ea;
@@ -293,10 +308,13 @@ ol.bibliography li .row > .col-sm-8 {
   font-style: italic;
 }
 .awards-grid {
-  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.5rem 1.25rem;
+  margin-top: 0.75rem;
 }
 .award-item {
-  margin-bottom: 1.5rem;
+  margin: 0;
 }
 .award-img {
   border-radius: 6px;
