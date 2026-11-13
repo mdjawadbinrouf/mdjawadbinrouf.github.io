@@ -206,71 +206,6 @@ a:hover {
   color: var(--leaf);
 }
 
-/* The grid readout in the right column */
-.hero-side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: clamp(12px, 2.4vh, 22px);
-  width: 340px;
-}
-
-.grid-panel {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 14px 16px 12px;
-  font-size: 14px;
-  text-align: center;
-}
-
-.grid-panel .readout {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin: 0;
-}
-
-.readout div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.readout b {
-  font-family: var(--display);
-  font-size: 20px;
-  line-height: 1.1;
-  color: var(--forest);
-}
-
-.readout span {
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.grid-panel label {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 500;
-  color: var(--forest);
-  margin-top: 6px;
-}
-
-.grid-panel input[type="range"] {
-  width: 100%;
-  accent-color: var(--leaf);
-  margin: 4px 0 2px;
-}
-
-.grid-panel .note {
-  margin: 6px 0 0;
-  font-size: 12px;
-  color: var(--muted);
-}
-
 /* Credentials strip */
 .creds {
   background: var(--forest);
@@ -772,15 +707,9 @@ a:hover {
     padding: 32px 0 24px;
   }
   .hero-inner {
-    padding-bottom: 220px;
-  }
-  .hero-side {
-    display: contents;
+    padding-bottom: 270px;
   }
 
-  .grid-panel {
-    order: 2;
-  }
   .focus,
   .paper,
   .paper:nth-child(even) {
