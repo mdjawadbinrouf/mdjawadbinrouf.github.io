@@ -8,6 +8,9 @@
 @font-face { font-family: "IBM Plex Sans"; src: url("assets/fonts/ibm-plex-sans-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
 
 :root {
+  /* Hero scene sizes follow the window height so the whole scene fits on screen. */
+  --band: clamp(60px, 11vh, 120px);
+  --strip: clamp(76px, 16vh, 170px);
   --paper: #f4faf5;
   --mint: #e2f3e7;
   --forest: #0f3d2e;
@@ -75,7 +78,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   gap: 4px 28px;
-  padding: 22px 0;
+  padding: clamp(12px, 2.6vh, 22px) 0;
 }
 
 .site-name {
@@ -133,30 +136,30 @@ a:hover {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 48px;
   align-items: center;
-  padding: 32px 0 330px;
+  padding: clamp(4px, 1.5vh, 32px) 0 calc(var(--band) + var(--strip) + clamp(8px, 2vh, 40px));
 }
 
 .hero h1 {
   margin: 0;
   font-family: var(--display);
   font-weight: 800;
-  font-size: clamp(44px, 7.4vw, 92px);
+  font-size: clamp(36px, min(7.4vw, 10vh), 92px);
   line-height: 0.98;
   letter-spacing: -0.025em;
   color: var(--forest);
 }
 
 .hero .lede {
-  margin: 24px 0 0;
+  margin: clamp(12px, 2.6vh, 24px) 0 0;
   max-width: 32ch;
   font-family: var(--display);
   font-weight: 500;
-  font-size: clamp(20px, 2.3vw, 26px);
+  font-size: clamp(18px, min(2.3vw, 3.4vh), 26px);
   line-height: 1.35;
 }
 
 .hero .role {
-  margin: 16px 0 0;
+  margin: clamp(8px, 1.8vh, 16px) 0 0;
   color: #1f4a3b;
   font-size: 16px;
   max-width: 52ch;
@@ -167,7 +170,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 12px 22px;
-  margin-top: 28px;
+  margin-top: clamp(14px, 3vh, 28px);
 }
 
 .btn {
@@ -204,8 +207,9 @@ a:hover {
 }
 
 .portrait {
-  width: 200px;
-  height: 248px;
+  height: clamp(130px, 27vh, 248px);
+  width: auto;
+  aspect-ratio: 200 / 248;
   border-radius: 120px 120px 18px 18px;
   object-fit: cover;
   border: 3px solid var(--white);
@@ -228,7 +232,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
+  gap: clamp(12px, 2.4vh, 22px);
   width: 340px;
 }
 
@@ -682,6 +686,9 @@ a:hover {
   }
   .hero-inner {
     padding-bottom: 220px;
+  }
+  .portrait {
+    height: 148px;
   }
   .hero-side {
     display: contents;

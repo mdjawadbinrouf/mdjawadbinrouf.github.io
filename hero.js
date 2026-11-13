@@ -76,7 +76,12 @@
 
   function resize() {
     var r = canvas.getBoundingClientRect();
-    w = r.width; h = r.height; bandH = w < 700 ? 90 : 120; stripH = w < 700 ? 110 : 170;
+    w = r.width; h = r.height;
+    var vh = window.innerHeight / 100;
+    function clamp(lo, v, hi) { return Math.max(lo, Math.min(hi, v)); }
+    // Same sizes as the --band and --strip values in style.css.
+    bandH = w < 700 ? 90 : clamp(60, 11 * vh, 120);
+    stripH = w < 700 ? 110 : clamp(76, 16 * vh, 170);
     canvas.width = w * dpr; canvas.height = h * dpr;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     build();
@@ -129,7 +134,7 @@
 
   function drawTurbine(t) {
     var x = t.x * w, base = hillY(x, t.layer) + 4;
-    var H = (w < 700 ? 150 : 230) * t.scale;
+    var H = stripH * 1.35 * t.scale;
     var d = darkness(hour);
     var col = mix([250, 252, 250], [206, 218, 216], d);
     var hubY = base - H;
@@ -178,7 +183,7 @@
     var col = rgb(mix([74, 110, 94], [50, 76, 66], d));
     var tops = [];
     towers.forEach(function (t) {
-      var x = t.x * w, base = hillY(x, 2) + 2, H = w < 700 ? 56 : 80;
+      var x = t.x * w, base = hillY(x, 2) + 2, H = stripH * 0.48;
       var top = base - H;
       ctx.strokeStyle = col; ctx.lineWidth = 1.6;
       ctx.beginPath();
@@ -206,6 +211,7 @@
     var y0 = h - bandH, step = 4, x, t;
     function px(tt) { return (tt / 24) * w; }
     function py(v) { return h - v * (bandH - 18); }
+    ctx.font = (bandH < 90 ? 11 : 12) + "px 'IBM Plex Sans', sans-serif";
     var d = darkness(hour);
     ctx.fillStyle = rgb(mix([233, 244, 236], [196, 214, 214], d)); ctx.fillRect(0, y0, w, bandH);
     ctx.beginPath(); ctx.moveTo(0, h);
