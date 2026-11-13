@@ -2,7 +2,6 @@
 layout: page
 title: Physiological workload in garment work
 description: Multisensory biosignals and ML for occupational ergonomics in Bangladesh RMG factories
-img: assets/img/projects/rmg_workload.jpg
 importance: 1
 category: research
 ---

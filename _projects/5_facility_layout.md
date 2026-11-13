@@ -2,7 +2,6 @@
 layout: page
 title: Machine shop layout redesign
 description: Facility layout study of the AUST Machine Shop lab (2023)
-img: assets/img/projects/facility_layout.jpg
 importance: 5
 category: design
 ---

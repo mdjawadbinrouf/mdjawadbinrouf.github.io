@@ -13,9 +13,9 @@
   --global-theme-color: #0b5f58;
   --global-hover-color: #0b5f58;
   --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #10243a;
-  --global-footer-text-color: #{v.$grey-color-light};
-  --global-footer-link-color: #{v.$white-color};
+  --global-footer-bg-color: #ffffff;
+  --global-footer-text-color: #5b6773;
+  --global-footer-link-color: #0b5f58;
   --global-distill-app-color: #{v.$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{v.$white-color};
@@ -240,4 +240,14 @@ h6,
 .abbr abbr.badge div,
 .abbr abbr.badge a {
   color: #ffffff !important;
+}
+
+/* Plain look: light footer, no image shadow */
+footer.fixed-bottom,
+footer.sticky-bottom {
+  border-top: 1px solid #e3e7ea;
+}
+.profile img,
+.profile figure img {
+  box-shadow: none !important;
 }

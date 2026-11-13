@@ -2,7 +2,6 @@
 layout: page
 title: ML for energy forecasting
 description: Undergraduate thesis on multivariate energy forecasting for Bangladesh
-img: assets/img/projects/energy_forecasting.jpg
 importance: 2
 category: research
 ---

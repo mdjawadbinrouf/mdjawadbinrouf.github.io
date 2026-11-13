@@ -2,7 +2,6 @@
 layout: page
 title: Ergonomic manual pry bar
 description: Hand tool redesign with an adjustable handle (2023)
-img: assets/img/projects/pry_bar.jpg
 importance: 4
 category: design
 ---

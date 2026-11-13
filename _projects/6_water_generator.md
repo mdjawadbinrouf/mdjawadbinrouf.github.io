@@ -2,7 +2,6 @@
 layout: page
 title: Atmospheric water generator
 description: Product design for coastal water scarcity (2023)
-img: assets/img/projects/water_generator.jpg
 importance: 6
 category: design
 ---

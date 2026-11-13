@@ -2,7 +2,6 @@
 layout: page
 title: Ergonomic welding workstation
 description: Workstation redesign for the AUST welding shop (2023)
-img: assets/img/projects/welding_workstation.jpg
 importance: 3
 category: design
 ---
