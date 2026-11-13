@@ -223,7 +223,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 18px;
-  margin-top: 14px;
+  margin: 0;
   font-size: 13px;
   color: #c9cdf0;
 }
@@ -239,15 +239,102 @@ a:hover {
   background: currentColor;
 }
 
-.legend .ecg { color: var(--ecg); }
-.legend .emg { color: var(--emg); }
-.legend .eda { color: var(--eda); }
-.legend .eeg { color: var(--eeg); }
 .legend span { color: #dfe2ff; }
-.legend .ecg::before { background: var(--ecg); }
-.legend .emg::before { background: var(--emg); }
-.legend .eda::before { background: var(--eda); }
-.legend .eeg::before { background: var(--eeg); }
+.legend span::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.legend .station::before { background: var(--eda); }
+.legend .sub::before { background: var(--eeg); width: 7px; height: 7px; }
+.legend .solar::before { background: var(--emg); border-radius: 1px; transform: rotate(45deg); width: 8px; height: 8px; }
+
+.grid-controls {
+  margin-top: 22px;
+}
+
+.grid-hint {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #b9bfe8;
+}
+
+.grid-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.grid-buttons button {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--white);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.grid-buttons button:hover {
+  border-color: var(--emg);
+  color: var(--emg);
+}
+
+.grid-buttons #add-solar {
+  border-color: var(--emg);
+}
+
+.solar-count {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #b9bfe8;
+  min-height: 1.4em;
+}
+
+.hero {
+  cursor: crosshair;
+}
+
+.hero a,
+.hero button {
+  cursor: pointer;
+}
+
+.tile-note {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.area {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.area h3 {
+  margin: 0 0 8px;
+  font-family: var(--display);
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.area p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+}
 
 /* Credentials strip under the hero */
 .creds {
@@ -343,8 +430,9 @@ a:hover {
 }
 
 .signal b {
+  display: block;
   font-family: var(--display);
-  font-size: 18px;
+  font-size: 16px;
   color: var(--white);
   margin-right: 6px;
 }
