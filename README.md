@@ -15,3 +15,5 @@ Personal website of Md Jawad Bin Rouf. Plain HTML, one CSS file and one small sc
 Edit a file on GitHub (pencil icon), commit, and the site updates within a minute or two.
 
 Fonts: Bricolage Grotesque and IBM Plex Sans, both under the SIL Open Font License (see `assets/fonts`).
+
+After editing `style.css` or `hero.js`, change the `?v=` number after the file name in each page's `<head>` (any new value works) so visitors' browsers load the new version instead of an old saved copy.
