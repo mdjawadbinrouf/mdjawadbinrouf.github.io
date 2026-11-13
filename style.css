@@ -206,34 +206,6 @@ a:hover {
   color: var(--leaf);
 }
 
-.name-row {
-  display: flex;
-  align-items: center;
-  gap: clamp(16px, 2.4vw, 28px);
-}
-
-.avatar {
-  display: block;
-  flex: 0 0 auto;
-  width: clamp(84px, 15vh, 132px);
-  height: clamp(84px, 15vh, 132px);
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--white);
-  box-shadow: 0 6px 18px rgba(15, 61, 46, 0.14);
-}
-
-.avatar-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f3faf5;
-  color: var(--leaf);
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: clamp(22px, 4vh, 32px);
-}
-
 /* The grid readout in the right column */
 .hero-side {
   display: flex;
@@ -693,10 +665,6 @@ a:hover {
   }
   .hero-inner {
     padding-bottom: 220px;
-  }
-  .avatar {
-    width: 76px;
-    height: 76px;
   }
   .hero-side {
     display: contents;
