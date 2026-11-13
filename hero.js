@@ -107,7 +107,7 @@
   function skyColor(t) {
     var s = sunPower(t);
     var twilight = Math.max(0, 1 - Math.abs(t - 6) / 1.5) + Math.max(0, 1 - Math.abs(t - 18) / 1.5);
-    var day = [226, 243, 231], night = [214, 228, 233], warm = [247, 236, 214];
+    var day = [226, 243, 231], night = [184, 204, 207], warm = [247, 236, 214];
     var k = Math.min(1, s * 1.6);
     var col = day.map(function (d, i) { return night[i] + (d - night[i]) * k; });
     col = col.map(function (v, i) { return v + (warm[i] - v) * Math.min(1, twilight) * 0.6; });
