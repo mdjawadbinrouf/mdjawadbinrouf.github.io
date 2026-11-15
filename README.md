@@ -17,4 +17,6 @@ After editing `style.css` or `site.js`, change the `?v=` value after the file na
 
 Images in `assets/img` are also used by the Google Site, so keep them in place.
 
+Profile icons: Font Awesome Free 7.3.1, CC BY 4.0 (https://fontawesome.com/license/free).
+
 Fonts: Fraunces, Inter and JetBrains Mono, all under the SIL Open Font License (see `assets/fonts`).
