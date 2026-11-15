@@ -80,6 +80,19 @@
     });
   }
 
+  // News box: hide the fade and hint once scrolled to the end
+  var ns = $("#news-scroll"), hint = $("#news-hint");
+  if (ns) {
+    var check = function () {
+      var end = ns.scrollTop + ns.clientHeight >= ns.scrollHeight - 4;
+      ns.classList.toggle("at-end", end);
+      if (hint) hint.classList.toggle("hide", end);
+    };
+    ns.addEventListener("scroll", check, { passive: true });
+    window.addEventListener("resize", check);
+    check();
+  }
+
   if (!("IntersectionObserver" in window)) return;
 
   // Current section in the nav
@@ -102,7 +115,7 @@
       if (en.isIntersecting) { en.target.classList.add("visible"); revObs.unobserve(en.target); }
     });
   }, { rootMargin: "0px 0px -8% 0px" });
-  $$(".sec-head, .news li, .card, .pub, .row, .skill, .personal > div").forEach(function (el) {
+  $$(".sec-head, .card, .pub, .row, .skill, .personal > div").forEach(function (el) {
     if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add("reveal"); revObs.observe(el); }
   });
 })();
