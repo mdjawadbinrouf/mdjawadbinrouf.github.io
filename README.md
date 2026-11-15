@@ -1,19 +1,20 @@
 # mdjawadbinrouf.github.io
 
-Personal website of Md Jawad Bin Rouf. Plain HTML, one CSS file and one small script, published by GitHub Pages.
+Personal website of Md Jawad Bin Rouf. One page of plain HTML, one CSS file and one small script, published by GitHub Pages.
 
 ## Editing
 
-- Home page: `index.html` (research, selected papers, awards)
-- Publications: `publications.html`
-- Awards: `awards.html`
-- About me page (photo, bio, education, experience): `about.html`, and the CV PDF at `assets/pdf/Md_Jawad_Bin_Rouf_CV.pdf`
-- Colors and fonts: `style.css`
-- Hero signal animation: `hero.js`
-- Photo: `assets/img/photo.jpg` (shown on the About me page; replace the file to change it)
+1. All content is in `index.html`, one section per block: News, Education, Experience, Research, Projects, Teaching, Awards, Skills, Beyond the lab, Contact.
+2. Experience cards: set `data-tags` to `teaching`, `research` or `service` so the filter chips work.
+3. Papers: set `data-area` (`forecasting` or `decision`) and `data-status` (`journal`, `conference` or `review`). A `pub-summary` paragraph is optional.
+4. Colors and fonts: `style.css` (the variables at the top).
+5. Menu, filters, summaries switch and photo viewer: `site.js`.
+6. Photo: `assets/img/photo.jpg`. CV: `assets/pdf/Md_Jawad_Bin_Rouf_CV.pdf`.
 
-Edit a file on GitHub (pencil icon), commit, and the site updates within a minute or two.
+The old `about.html`, `publications.html`, `awards.html` and `cv.html` addresses redirect to the matching section.
 
-Fonts: Bricolage Grotesque and IBM Plex Sans, both under the SIL Open Font License (see `assets/fonts`).
+After editing `style.css` or `site.js`, change the `?v=` value after the file name in `index.html` so browsers load the new version.
 
-After editing `style.css` or `hero.js`, change the `?v=` number after the file name in each page's `<head>` (any new value works) so visitors' browsers load the new version instead of an old saved copy.
+Images in `assets/img` are also used by the Google Site, so keep them in place.
+
+Fonts: Lora, IBM Plex Sans and Bricolage Grotesque, all under the SIL Open Font License (see `assets/fonts`).
